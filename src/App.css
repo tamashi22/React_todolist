@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+*{
+    box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+    
 }
+.todo__app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    background-color: rgba(248, 248, 255, 0.788);
+    border-radius: 30px;
+    
+}
+h1 {
+    margin: 32px 0;
+    color: #b645e2;
+    font-weight: bolder;
+    font-size: 35px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.6;
+    
+  }
+  .todo__input {
+    padding-left:20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid #b645e2;
+    outline: none;
+    width: 320px;
+    background:white;
+    font-size: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo__button {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%,
+     #7C6AFA 90.23%);
+    color: #fff;
+    
+  }
+  .todo__container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .todo__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: rgb(0, 0, 0);
+    background-color:#b545e281;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+  }
+  .todo__input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .todo__button.edit {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+    padding: 16px 22px;
+  }
+
+.icons {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.delete-icon {
+  margin-right: 5px;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+  
+
